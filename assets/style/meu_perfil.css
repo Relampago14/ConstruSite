@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #D9D9D9;
+    width: 1237px;
+    height: 900px;
+    margin: 0px 101px 0px 101px;
+}
+
+.tit_secao{
+    text-align: center;
+    margin: auto;
+}
+
+#img_perfil{
+    padding-left: 29px;
+    width: 351px;
+    height: 367px;
+}
