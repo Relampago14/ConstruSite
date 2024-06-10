@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/revisar_pedido.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>ConstruSite - Revisar Pedido</title>
+</head>
+<body>
+    <header>
+        ConstruSite
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="tit_main">Revise o seu Pedido</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <span class="tit_secao">Itens</span>
+                </div>
+            </div>
+
+            <div class="row" id="lista_itens">
+                <div class="row item">
+                    <div class="col-3">
+                        <img class="img_item" src="assets/img/item_default.png" alt="Imagem do Item">
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <span class="nome_item">Item 1</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 btns_delete">
+                                <button class="btn_delete">
+                                    <img class="img_lixeira" src="assets/img/lixeira.png" alt="Botão de Excluir item">
+                                </button>
+                            </div>
+                            <div class="col-10">
+                                <div class="row">
+                                    <span class="descr_item">Descrição do Item</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <span class="preco_quantidade">Preço x Quantidade</span>
+                                    </div>
+                                    <div class="col-2 preco_total">
+                                        <span class="preco_total">Preço Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <div class="col-3">
+                        <img class="img_item" src="assets/img/item_default.png" alt="Imagem do Item">
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <span class="nome_item">Item 2</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 btns_delete">
+                                <button class="btn_delete">
+                                    <img class="img_lixeira" src="assets/img/lixeira.png" alt="Botão de Excluir item">
+                                </button>
+                            </div>
+                            <div class="col-10">
+                                <div class="row">
+                                    <span class="descr_item">Descrição do Item</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <span class="preco_quantidade">Preço x Quantidade</span>
+                                    </div>
+                                    <div class="col-2 preco_total">
+                                        <span>Preço Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="finalizar_compra">
+                <div class="col-3">
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-2">
+                        </div>
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-5">
+                                    <button class="btns_buy" id="btn_cancelar">CANCELAR</button>
+                                </div>
+                                <div class="col-5">
+                                    <button class="btns_buy" id="btn_comprar">COMPRAR</button>
+                                </div>
+                                <div class="col-2" id="preco_final">
+                                    <span>Valor Total</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Sobre o ConstruSite
+    </footer>
+</body>
+</html>
