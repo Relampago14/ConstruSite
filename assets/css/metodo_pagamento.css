@@ -7,8 +7,38 @@ body {
     height: 100vh;
 }
 
-header{
+.cabecalho {
+    background-color: var(--cor-primaria);
     height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.cabecalho__titulo {
+    font-size: 56px;
+    padding-left: 30px;
+}
+
+.cabecalho__opcoes {
+    display: flex;
+    align-items: center;
+    padding-left: 40%;
+    gap: 10%;
+}
+
+.cabecalho__links {
+    text-decoration: none;
+}
+
+.cabecalho__subtitulo {
+    color: var(--cor-secundaria);
+    font-size: 36px;
+}
+
+.cabecalho__icone {
+    max-width: 60px;
 }
 
 main{
