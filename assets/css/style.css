@@ -30,6 +30,7 @@ body {
 }
 
 .cabecalho__titulo {
+    color: var(--cor-secundaria);
     font-size: 56px;
     padding-left: 30px;
 }
