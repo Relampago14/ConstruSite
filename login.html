@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstruSite</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/cadastro.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">ConstruSite</h1>
+        <div class="cabecalho__opcoes">
+            <a class="cabecalho__links" href="./departamentos.html">
+                <h2 class="cabecalho__subtitulo">Departamentos</h2>
+            </a>
+            <a class="cabecalho__links" href="./promocoes.html">
+                <h2 class="cabecalho__subtitulo">Promoções</h2>
+            </a>
+            <a class="cabecalho__links" href="./favoritos.html"><img class="cabecalho__icone"
+                    src="./src/imagens/estrela.png" alt="Estrela"></a>
+            <a class="cabecalho__links" href="./favoritos.html"><img class="cabecalho__icone"
+                    src="./src/imagens/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carinho"></a>
+            <a class="cabecalho__links" href="./cadastro.html"><img class="cabecalho__icone"
+                    src="./src/imagens/do-utilizador.png" alt="Usuario"></a>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="cadastro">
+            <h1 class="cadastro__titulo">Login:</h1>
+            <form class="formulario__cadastro" action="/submit" method="post">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <input type="submit" value="Entrar">
+            </form>
+            <a class="cadastro__login" href="./cadastro.html">Não pussuo conta</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="rodape__links" href="./favoritos.html">
+            <h2 class="rodape__subtitulo">Sobre o ConstruSite</h2>
+        </a>
+        <div class="rodape__opcoes">
+
+            <a class="rodape__links" href="./favoritos.html">
+                <h2 class="rodape__subtitulo">Contatos</h2>
+            </a>
+            <a class="rodape__links" href="./favoritos.html">
+                <h2 class="rodape__subtitulo">Duvidas</h2>
+            </a>
+            <a class="rodape__links" href="./favoritos.html">
+                <h2 class="rodape__subtitulo">Atendimentos</h2>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
