@@ -1,0 +1,21 @@
+.conteudo {
+    display: flex;
+    padding: 60px 80px 60px 89px;
+    align-items: center;
+
+}
+
+.cadastro {
+
+    height: 700px;
+    width: 1440px;
+}
+
+.formulario__cadastro {
+width: 40%;
+    font-size: 40px;
+    padding: 20px;
+}
+
+
+
