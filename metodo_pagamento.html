@@ -10,26 +10,22 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 </head>
-<body>
+
+<body onload="show_Header()" onResize="show_Header()">
+
     <header class="cabecalho">
-        <a class="cabecalho_links" href="./index.html">
-            <h1 class="cabecalho_titulo">ConstruSite</h1>
-        </a>
-        <div class="cabecalho_opcoes">
-            <a class="cabecalho_links" href="./departamentos.html">
-                <h2 class="cabecalho_subtitulo">Departamentos</h2>
-            </a>
-            <a class="cabecalho_links" href="./promocoes.html">
-                <h2 class="cabecalho_subtitulo">Promoções</h2>
-            </a>
-            <a class="cabecalho_links" href="./favoritos.html"><img class="cabecalho_icone"
-                src="assets/img/estrela.png" alt="Estrela"></a>
-            <a class="cabecalho_links" href="./favoritos.html"><img class="cabecalho_icone"
-                    src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
-            <a class="cabecalho_links" href="./cadastro.html"><img class="cabecalho_icone"
-                    src="assets/img/do-utilizador.png" alt="Usuario"></a>
-        </div>
+
     </header>
+
+    <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
+        <a href="./departamentos.html">Departamentos</a>
+        <a href="./promocoes.html">Promoções</a>
+        <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
+        <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
+        <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
+    </div>
 
     <main>
         <div class="container-fluid">
@@ -115,5 +111,8 @@
             </a>
         </div>
     </footer>
+
+    <!-- Script principal -->
+    <script src="assets/script/script.js"></script>
 </body>
 </html>

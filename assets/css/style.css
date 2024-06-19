@@ -24,21 +24,24 @@ body{
     background-color: var(--cor-primaria);
     height: 80px;
     width: 100%;
+}
+
+#col_tit_header{
     display: flex;
     align-items: center;
 }
 
 .cabecalho_titulo{
     color: var(--cor-secundaria);
+    align-items: center;
     font-size: 56px;
     padding-left: 30px;
 }
 
 .cabecalho_opcoes{
-    display: flex;
     align-items: center;
-    padding-left: 40%;
-    gap: 10%;
+    height: 80px;
+    gap: 1%
 }
 
 .cabecalho_links{
@@ -52,6 +55,51 @@ body{
 
 .cabecalho_icone{
     max-width: 60px;
+}
+
+#btn_menu{
+    height: 80px;
+    background: transparent;
+}
+
+#img_menu{
+    height: 40px;
+    width: 40px;
+}
+
+/* Menu recolhível quando a tela tiver 768px de width*/
+.sidebar{
+    height: 100%; 
+    width: 0; /* Propriedade alterada em ./script/script.js */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color: white;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .conteudo{
@@ -75,7 +123,6 @@ body{
     width: 100%;
     height:100%;
 }
-
 
 .carrossel_imagens_tamanho{
     width: 100%;
@@ -142,7 +189,6 @@ button{
 .sessao_opcoes{
     display: flex;
     flex-direction: column;
-
 }
 
 .opcoes{
@@ -188,12 +234,72 @@ button{
     align-items: center;
     padding-left: 48%;
     gap: 15%;
-
 }
 
 .rodape_links{
-
     text-decoration: none;
     color: var(--cor-branco);
     font-size: 24px;
+}
+
+@media only screen and (max-width: 1200px){
+
+    .cabecalho_titulo{
+        font-size: 50px;
+        padding-left: 25px;
+    }
+
+    .cabecalho_subtitulo{
+        font-size: 30px;
+    }
+
+    .cabecalho_icone{
+        max-width: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 992px){
+
+    .cabecalho_titulo{
+        font-size: 45px;
+        padding-left: 0;
+    }
+
+    .cabecalho_subtitulo{
+        font-size: 25px;
+        text-align: right;
+    }
+
+    .cabecalho_opcoes{
+        gap: 0;
+    }
+
+    .cabecalho_icone{
+        max-width: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .cabecalho_titulo{
+        font-size: 40px;
+    }
+
+    .cabecalho_icone{
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+
+    #img_menu{
+        height: 35px;
+        width: 35px;
+    }
+
 }
