@@ -13,108 +13,112 @@
 
 <body onload="show_Header()" onResize="show_Header()">
 
-    <header class="cabecalho">
+    <div class="container-fluid">
 
-    </header>
+        <header class="cabecalho">
 
-    <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
-        <a href="./departamentos.html">Departamentos</a>
-        <a href="./promocoes.html">Promoções</a>
-        <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
-        <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
-        <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
-    </div>
+        </header>
 
-    <main class="conteudo">
-        <section class="carrossel">
-
-            <div class="carrossel_posicao">
-                <img class="carrossel_imagens_tamanho" src="assets/img/slide2.jpg" alt="Imagem 2">
-            </div>
-        </section>
-
-    <section class=" conteudo_filtro">
-        <div class="container">
-            <h1>Filtro de Busca</h1>
-            <input type="text" id="searchInput" placeholder="Digite para buscar...">
-            <ul id="itemList">
-                <li>Produto 1</li>
-                <li>Produto 2</li>
-                <li>Produto 3</li>
-                <li>Produto 4</li>
-                <li>Produto 5</li>
-                <li>Produto 6</li>
-                <li>Produto 7</li>
-                <li>Produto 8</li>
-            </ul>
+        <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
+            <a href="./departamentos.html">Departamentos</a>
+            <a href="./promocoes.html">Promoções</a>
+            <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
+            <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
+            <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
         </div>
-     
-        <section class="sessao_opcoes">
-   
-            <div class="conteudo_produtos">
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 1</h3>
+
+        <main class="conteudo">
+            <section class="carrossel">
+
+                <div class="carrossel_posicao">
+                    <img class="carrossel_imagens_tamanho" src="assets/img/slide2.jpg" alt="Imagem 2">
                 </div>
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 2</h3>
-                </div>
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 3</h3>
-                </div>
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 4</h3>
-                </div>
+            </section>
+
+        <section class=" conteudo_filtro">
+            <div class="container">
+                <h1>Filtro de Busca</h1>
+                <input type="text" id="searchInput" placeholder="Digite para buscar...">
+                <ul id="itemList">
+                    <li>Produto 1</li>
+                    <li>Produto 2</li>
+                    <li>Produto 3</li>
+                    <li>Produto 4</li>
+                    <li>Produto 5</li>
+                    <li>Produto 6</li>
+                    <li>Produto 7</li>
+                    <li>Produto 8</li>
+                </ul>
             </div>
         
-  
+            <section class="sessao_opcoes">
+    
+                <div class="conteudo_produtos">
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 1</h3>
+                    </div>
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 2</h3>
+                    </div>
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 3</h3>
+                    </div>
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 4</h3>
+                    </div>
+                </div>
+            
+    
 
-            <div class="conteudo_produtos">
-              
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 5</h3>
+                <div class="conteudo_produtos">
+                
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 5</h3>
+                    </div>
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 6</h3>
+                    </div>
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 7</h3>
+                    </div>
+                    <div class="produto">
+                        <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
+                        <h3 class="departamento_titulo">Produto 8</h3>
+                    </div>
                 </div>
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 6</h3>
-                </div>
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 7</h3>
-                </div>
-                <div class="produto">
-                    <img class="opcoes_imagem" src="assets/img/produto1.webp" alt="">
-                    <h3 class="departamento_titulo">Produto 8</h3>
-                </div>
-            </div>
-          
+            
+            </section>
         </section>
-    </section>
-    </main>
+        </main>
 
-    <footer class="rodape">
-        <a class="rodape_links" href="./favoritos.html">
-            <h2 class="rodape_subtitulo">Sobre o ConstruSite</h2>
-        </a>
-        <div class="rodape_opcoes">
+        <footer class="rodape">
+            <a class="rodape_links" href="./favoritos.html">
+                <h2 class="rodape_subtitulo">Sobre o ConstruSite</h2>
+            </a>
+            <div class="rodape_opcoes">
 
-            <a class="rodape_links" href="./contatos.html">
-                <h2 class="rodape_subtitulo">Contatos</h2>
-            </a>
-            <a class="rodape_links" href="./favoritos.html">
-                <h2 class="rodape_subtitulo">Duvidas</h2>
-            </a>
-            <a class="rodape_links" href="./favoritos.html">
-                <h2 class="rodape_subtitulo">Atendimentos</h2>
-            </a>
-        </div>
-    </footer>
+                <a class="rodape_links" href="./contatos.html">
+                    <h2 class="rodape_subtitulo">Contatos</h2>
+                </a>
+                <a class="rodape_links" href="./favoritos.html">
+                    <h2 class="rodape_subtitulo">Duvidas</h2>
+                </a>
+                <a class="rodape_links" href="./favoritos.html">
+                    <h2 class="rodape_subtitulo">Atendimentos</h2>
+                </a>
+            </div>
+        </footer>
+        
+    </div>
 
     <!-- Script principal -->
     <script src="assets/script/script.js"></script>
