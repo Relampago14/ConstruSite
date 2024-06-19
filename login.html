@@ -15,58 +15,55 @@
 
 <body onload="show_Header()" onResize="show_Header()">
 
-    <div class="container-fluid">
-    
-        <header class="cabecalho">
+    <header class="cabecalho">
 
-        </header>
+    </header>
 
-        <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
-            <a href="./departamentos.html">Departamentos</a>
-            <a href="./promocoes.html">Promoções</a>
-            <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
-            <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
-            <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
-        </div>
-
-        <main class="conteudo">
-            <section class="cadastro">
-                <h1 class="cadastro_titulo">Login:</h1>
-                <form class="formulario_cadastro" action="/submit" method="post">
-            
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
-
-                    <input type="submit" value="Entrar">
-                </form>
-                <a class="cadastro_login" href="./cadastro.html">Não pussuo conta</a>
-            </section>
-        </main>
-
-        <footer class="rodape">
-            <a class="rodape_links" href="./favoritos.html">
-                <h2 class="rodape_subtitulo">Sobre o ConstruSite</h2>
-            </a>
-            <div class="rodape_opcoes">
-
-                <a class="rodape_links" href="./contatos.html">
-                    <h2 class="rodape_subtitulo">Contatos</h2>
-                </a>
-                <a class="rodape_links" href="./favoritos.html">
-                    <h2 class="rodape_subtitulo">Duvidas</h2>
-                </a>
-                <a class="rodape_links" href="./favoritos.html">
-                    <h2 class="rodape_subtitulo">Atendimentos</h2>
-                </a>
-            </div>
-        </footer>
-
+    <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
+        <a href="./departamentos.html">Departamentos</a>
+        <a href="./promocoes.html">Promoções</a>
+        <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
+        <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
+        <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
     </div>
+
+    <main class="conteudo">
+        <section class="cadastro">
+            <h1 class="cadastro_titulo">Login:</h1>
+            <form class="formulario_cadastro" action="/submit" method="post">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <input type="submit" value="Entrar">
+            </form>
+            <a class="cadastro_login" href="./cadastro.html">Não pussuo conta</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="rodape_links" href="./favoritos.html">
+            <h2 class="rodape_subtitulo">Sobre o ConstruSite</h2>
+        </a>
+        <div class="rodape_opcoes">
+
+            <a class="rodape_links" href="./contatos.html">
+                <h2 class="rodape_subtitulo">Contatos</h2>
+            </a>
+            <a class="rodape_links" href="./favoritos.html">
+                <h2 class="rodape_subtitulo">Duvidas</h2>
+            </a>
+            <a class="rodape_links" href="./favoritos.html">
+                <h2 class="rodape_subtitulo">Atendimentos</h2>
+            </a>
+        </div>
+    </footer>
+
     <!-- Script principal -->
     <script src="assets/script/script.js"></script>
 </body>

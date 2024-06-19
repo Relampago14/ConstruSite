@@ -13,66 +13,62 @@
 
 <body onload="show_Header()" onResize="show_Header()">
 
-    <div class="container-fluid">
+    <header class="cabecalho">
 
-        <header class="cabecalho">
+    </header>
 
-        </header>
-
-        <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
-            <a href="./departamentos.html">Departamentos</a>
-            <a href="./promocoes.html">Promoções</a>
-            <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
-            <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
-            <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
-        </div>
-
-        <main class="conteudo">
-            <section class="favoritos">
-                <h1 class="favoritos_titulo">Favoritos:</h1>
-                <div class="favorito">
-                    <img class="favorito_produto" src="assets/img/favorito1.webp" alt="Favorito1">
-                    <div class="favorito_dados">
-                        <h2>Argamassa</h2>
-                        <p>27,90/CADA</p>
-                        <img class="favorito_visualizar" src="assets/img/olho.png" alt="Visualizar">
-                    </div>
-                </div>
-                <div class="separacao_favorito"></div>
-
-                <div class="favorito">
-                    <img class="favorito_produto" src="assets/img/favorito2.webp" alt="Favorito2">
-                    <div class="favorito_dados">
-                        <h2>Colher de pedreiro</h2>
-                        <p>16,90/CADA</p>
-                        <img class="favorito_visualizar" src="assets/img/olho.png" alt="Visualizar">
-                    </div>
-                </div>
-                <div class="separacao_favorito"></div>
-            </section>
-        </main>
-
-        <footer class="rodape">
-            <a class="rodape_links" href="./favoritos.html">
-                <h2 class="rodape_subtitulo">Sobre o ConstruSite</h2>
-            </a>
-            <div class="rodape_opcoes">
-
-                <a class="rodape_links" href="./contatos.html">
-                    <h2 class="rodape_subtitulo">Contatos</h2>
-                </a>
-                <a class="rodape_links" href="./favoritos.html">
-                    <h2 class="rodape_subtitulo">Duvidas</h2>
-                </a>
-                <a class="rodape_links" href="./favoritos.html">
-                    <h2 class="rodape_subtitulo">Atendimentos</h2>
-                </a>
-            </div>
-        </footer>
-
+    <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
+        <a href="./departamentos.html">Departamentos</a>
+        <a href="./promocoes.html">Promoções</a>
+        <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
+        <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
+        <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
     </div>
+
+    <main class="conteudo">
+        <section class="favoritos">
+            <h1 class="favoritos_titulo">Favoritos:</h1>
+            <div class="favorito">
+                <img class="favorito_produto" src="assets/img/favorito1.webp" alt="Favorito1">
+                <div class="favorito_dados">
+                    <h2>Argamassa</h2>
+                    <p>27,90/CADA</p>
+                    <img class="favorito_visualizar" src="assets/img/olho.png" alt="Visualizar">
+                </div>
+            </div>
+            <div class="separacao_favorito"></div>
+
+            <div class="favorito">
+                <img class="favorito_produto" src="assets/img/favorito2.webp" alt="Favorito2">
+                <div class="favorito_dados">
+                    <h2>Colher de pedreiro</h2>
+                    <p>16,90/CADA</p>
+                    <img class="favorito_visualizar" src="assets/img/olho.png" alt="Visualizar">
+                </div>
+            </div>
+            <div class="separacao_favorito"></div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="rodape_links" href="./favoritos.html">
+            <h2 class="rodape_subtitulo">Sobre o ConstruSite</h2>
+        </a>
+        <div class="rodape_opcoes">
+
+            <a class="rodape_links" href="./contatos.html">
+                <h2 class="rodape_subtitulo">Contatos</h2>
+            </a>
+            <a class="rodape_links" href="./favoritos.html">
+                <h2 class="rodape_subtitulo">Duvidas</h2>
+            </a>
+            <a class="rodape_links" href="./favoritos.html">
+                <h2 class="rodape_subtitulo">Atendimentos</h2>
+            </a>
+        </div>
+    </footer>
 
     <!-- Script principal -->
     <script src="assets/script/script.js"></script>
