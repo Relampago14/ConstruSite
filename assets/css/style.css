@@ -229,13 +229,6 @@ button{
     padding-left: 2%;
 }
 
-.rodape_opcoes{
-    display: flex;
-    align-items: center;
-    padding-left: 48%;
-    gap: 15%;
-}
-
 .rodape_links{
     text-decoration: none;
     color: var(--cor-branco);
@@ -277,6 +270,10 @@ button{
 
     .cabecalho_icone{
         max-width: 30px;
+    }
+
+    .rodape{
+        height: auto;
     }
 
 }
