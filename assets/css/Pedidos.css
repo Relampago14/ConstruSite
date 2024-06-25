@@ -1,0 +1,152 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  gap: 600px;
+}
+header ul{
+  list-style: none;
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+header ul li{
+  margin-right: 50px;
+}
+
+.Carrinho h3 {
+  padding: 20px;
+  margin-left: 50px;
+}
+
+
+.Carrinho h2 {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+
+@media (max-width: 780px){
+  .Carrinho{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+  .Carrinho h3{
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+     margin-right: 50px;
+    
+  }
+}
+ul{
+  list-style: none;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+   gap: 600px;
+}
+footer div h3{
+  padding: 5px;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+footer ul li{
+  margin-right: 50px;
+}
+
+main{
+  background-color: gray;
+  margin: 20px;
+  
+}
+.Preço{
+  display: flex;
+  gap: 20px;
+  
+}
+
+.column{
+  display: grid;
+  grid-template-rows: 90px 90px;
+
+}
+.Total{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+   gap: 430px;
+}
+
+article{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+   background-color: #4f4f4f;
+  margin: 40px;
+}
+.Produtos{
+  gap: 20px;
+  grid-template-columns: repeat(2, 300px);
+}
+
+
+.Part2{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.flex{
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 1080px){
+  article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: #4f4f4f;
+
+  }
+  .Part2{
+    flex-direction: column;
+  }
+}
+
+img{
+  max-width: 400px;
+  height: auto;
+}
+@media (max-width: 768px){
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
