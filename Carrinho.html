@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <script src="https://kit.fontawesome.com/1387b7c250.js" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstruSite</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
-  <script src="script.js"></script>
+<body onload="show_Header()" onResize="show_Header()">
+ 
+  <header class="cabecalho">
 
-  <header>
-    <h1>ConstruSite</h1>
-    <ul>
-      <li>Promoções</li>
-       <li><i class="fa-regular fa-star"></i></li>
-      <li><i class="fa-solid fa-cart-shopping"></i></li>
-      <li><i class="fa-solid fa-user"></i></li>
-    </ul>
-  </header>
-
+    </header>
+  
+ <!-- Barra de menu lateral que irá aparecer apenas com telas de largura iguais menores que 768px -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="hide_Menu(event)">&times;</a>
+        <a href="./departamentos.html">Departamentos</a>
+        <a href="./promocoes.html">Promoções</a>
+        <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
+        <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
+        <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
+    </div>
 
   <main>
     <section class="Carrinho">
@@ -147,20 +151,27 @@
 </section>
     
   </main>  
+   <footer class="rodape">
+        <a class="rodape_links" href="./favoritos.html">
+            <h2 class="rodape_subtitulo">Sobre o ConstruSite</h2>
+        </a>
+        <div class="rodape_opcoes">
 
-  <footer>
-    <div>
-      <h3>Sobre o ConstrucSite</h3>
-    </div>
+            <a class="rodape_links" href="./contatos.html">
+                <h2 class="rodape_subtitulo">Contatos</h2>
+            </a>
+            <a class="rodape_links" href="./favoritos.html">
+                <h2 class="rodape_subtitulo">Duvidas</h2>
+            </a>
+            <a class="rodape_links" href="./favoritos.html">
+                <h2 class="rodape_subtitulo">Atendimentos</h2>
+            </a>
+        </div>
+    </footer>
 
-    <div>
-      <ul>
-        <li>Nossos Contatos</li>
-         <li>Dúvidas</li>
-         <li>Atendimento</li>
-      </ul>
-    </div>
-  </footer>
+   <!-- Script principal -->
+    <script src="assets/script/script.js"></script>
 </body>
 
+  
 </html>
