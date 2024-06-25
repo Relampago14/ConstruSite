@@ -7,180 +7,33 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-  html {
-  height: 100%;
-  width: 100%;
-}
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-header{
-  background-color: orange;
-  display: flex;
-  justify-content: space-around;
-  gap: 600px;
-}
-header ul{
-  list-style: none;
-  display: flex;
-  font-size: 25px;
-  font-weight: bold;
-}
-header ul li{
-  margin-right: 50px;
-}
-
-.Carrinho{
-  display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-  padding: 20px;
-  gap: 600px;
-}
-.Carrinho button{
-  font-size: 20px;
-  padding: 20px;
-  border-color: orange;
-  background-color: orange;
-  border-radius: 30px;
-}
-.Botão{
-  padding: 15px;
-}
-
-@media (max-width: 780px){
-  .Carrinho{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-}
-
-
-
-
-
-
-.Total {
-  display: block;
-}
-
-/* Estilo para telas menores */
-@media (max-width: 600px) {
-  .Total {
-      display: none;
-  }
-}
-
-
-
-ul{
-  list-style: none;
-}
-
-footer{
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-  color: white;
-   gap: 600px;
-}
-footer div h3{
-  padding: 5px;
-}
-footer ul{
-  display: flex;
-  list-style: none;
-  padding: 10px;
-}
-footer ul li{
-  margin-right: 50px;
-}
-
-main{
-  background-color: gray;
-  margin: 20px;
-  
-}
-.Preço{
-  display: flex;
-  gap: 20px;
-  
-}
-
-article{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-   background-color: #4f4f4f;
-  margin: 40px;
-}
-.Produtos{
-  gap: 20px;
-  grid-template-columns: repeat(2, 300px);
-}
-
-
-.Part2{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.flex{
-  display: flex;
-  gap: 30px;
-}
-
-@media (max-width: 1080px){
-  article{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    background-color: #4f4f4f;
-  }
-  .Part2{
-    flex-direction: column;
-  }
-}
-
-
-img{
-  width: 100%;
-  height: auto;
-}
-
-.Total{
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-  </style>
 </head>
 
 <body>
   <script src="script.js"></script>
     
   <header>
-    <h1>ConstruSite</h1>
-    <ul>
-      <li>Promoções</li>
-       <li><i class="fa-regular fa-star"></i></li>
-      <li><i class="fa-solid fa-cart-shopping"></i></li>
-      <li><i class="fa-solid fa-user"></i></li>
-    </ul>
-  </header>
+  <header class="cabecalho">
+        <a class="cabecalho_links" href="./index.html">
+            <h1 class="cabecalho_titulo">ConstruSite</h1>
+        </a>
+        <div class="cabecalho_opcoes">
+            <a class="cabecalho_links" href="./departamentos.html">
+                <h2 class="cabecalho_subtitulo">Departamentos</h2>
+            </a>
+            <a class="cabecalho_links" href="./promocoes.html">
+                <h2 class="cabecalho_subtitulo">Promoções</h2>
+            </a>
+            <a class="cabecalho_links" href="./favoritos.html"><img class="cabecalho_icone"
+                    src="assets/img/estrela.png" alt="Estrela"></a>
+            <a class="cabecalho_links" href="./favoritos.html"><img class="cabecalho_icone"
+                    src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
+            <a class="cabecalho_links" href="./cadastro.html"><img class="cabecalho_icone"
+                    src="assets/img/do-utilizador.png" alt="Usuario"></a>
+        </div>
 
+    </header>
+  </header>
 
   <main>
     <section class="Carrinho">
