@@ -46,28 +46,33 @@
 
             <div class="row" id="lista_itens">
                 <div class="row item">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-12">
                         <img class="img_item" src="assets/img/item_default.png" alt="Imagem do Item">
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9 col-12">
                         <div class="row">
-                            <span class="nome_item">Item 1</span>
+                            <div class="col-12">
+                                <span class="nome_item">Item 1</span>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-2 btns_delete">
+                            <div class="col-sm-2 col-12 btns_delete">
                                 <button class="btn_delete">
                                     <img class="img_lixeira" src="assets/img/lixeira.png" alt="Botão de Excluir item">
                                 </button>
                             </div>
+                            <div class="col-sm-0 col-2"></div>
                             <div class="col-10">
                                 <div class="row">
-                                    <span class="descr_item">Descrição do Item</span>
+                                    <div class="col-12">
+                                        <span class="descr_item">Descrição do Item</span>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-10">
-                                        <span class="preco_quantidade">Preço x Quantidade</span>
+                                        <span class="preco_quantidade">Preço x Quant</span>
                                     </div>
-                                    <div class="col-2 preco_total">
+                                    <div class="col-sm-2 col-12 preco_total">
                                         <span class="preco_total">Preço Total</span>
                                     </div>
                                 </div>
@@ -80,26 +85,31 @@
                     <div class="col-3">
                         <img class="img_item" src="assets/img/item_default.png" alt="Imagem do Item">
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9 col-12">
                         <div class="row">
-                            <span class="nome_item">Item 2</span>
+                            <div class="col-12">
+                                <span class="nome_item">Item 2</span>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-2 btns_delete">
+                            <div class="col-sm-2 col-12 btns_delete">
                                 <button class="btn_delete">
                                     <img class="img_lixeira" src="assets/img/lixeira.png" alt="Botão de Excluir item">
                                 </button>
                             </div>
+                            <div class="col-sm-0 col-2"></div>
                             <div class="col-10">
                                 <div class="row">
-                                    <span class="descr_item">Descrição do Item</span>
+                                    <div class="col-12">
+                                        <span class="descr_item">Descrição do Item</span>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-10">
-                                        <span class="preco_quantidade">Preço x Quantidade</span>
+                                        <span class="preco_quantidade">Preço x Quant</span>
                                     </div>
-                                    <div class="col-2 preco_total">
-                                        <span>Preço Total</span>
+                                    <div class="col-sm-2 col-12 preco_total">
+                                        <span class="preco_total">Preço Total</span>
                                     </div>
                                 </div>
                             </div>
@@ -109,6 +119,7 @@
             </div>
             <div class="row" id="finalizar_compra">
                 <div class="col-3">
+                    <button class="btns_buy d-none d-lg-block d-xl-none" id="btn_cancelar">CANCELAR</button>
                 </div>
                 <div class="col-9">
                     <div class="row">
@@ -117,10 +128,11 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-5">
-                                    <button class="btns_buy" id="btn_cancelar">CANCELAR</button>
+                                    <button class="btns_buy d-none d-xl-block" id="btn_cancelar">CANCELAR</button>
+                                    <button class="btns_buy d-none d-lg-block d-xl-none" id="btn_comprar">COMPRAR</button>
                                 </div>
                                 <div class="col-5">
-                                    <button class="btns_buy" id="btn_comprar">COMPRAR</button>
+                                    <button class="btns_buy d-none d-xl-block" id="btn_comprar">COMPRAR</button>
                                 </div>
                                 <div class="col-2" id="preco_final">
                                     <span>Valor Total</span>
@@ -129,6 +141,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row d-md-block d-lg-none mx-5">
+                <button class="btns_buy" id="btn_cancelar">CANCELAR</button>
+                <button class="btns_buy mt-5" id="btn_comprar">COMPRAR</button>
             </div>
         </div>
     </main>
