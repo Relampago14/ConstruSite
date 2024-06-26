@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConstruSite</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/metodo_pagamento.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <body onload="show_Header()" onResize="show_Header()">
@@ -23,10 +24,11 @@
         <a href="./departamentos.html">Departamentos</a>
         <a href="./promocoes.html">Promoções</a>
         <a href="./favoritos.html">Favoritos<img class="cabecalho_icone" src="assets/img/estrela.png" alt="Estrela"></a>
-        <a href="#">Carrinho<img class="cabecalho_icone" src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
-        <a href="./meu_perfil.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png" alt="Usuario"></a>
+        <a href="./carrinho.html">Carrinho<img class="cabecalho_icone"
+                src="assets/img/vista-lateral-vazia-do-carriho-de-compras.png" alt="Carrinho"></a>
+        <a href="./cadastro.html">Meu Perfil<img class="cabecalho_icone" src="assets/img/do-utilizador.png"
+                alt="Usuario"></a>
     </div>
-
     <main>
         <div class="container-fluid">
             <div class="row">
@@ -39,45 +41,54 @@
             <div class="row metodo_pagamento">
                 <div class="row nome_metodo">
                     <div class="col-12">
-                        <h2 class="tit_metodo">Cartão de Crédito</h2>
+
+                        <a class="link" href="./meu_pedido.html">
+                            <h2 class="tit_metodo">Cartão de Crédito</h2>
+                        </a>
                     </div>
                 </div>
                 <div class="row bandeiras_cartoes">
-                    <img src="assets/img/elo_band.png" 
-                        alt="Um círculo com bordas divididas em três partes nas cores vermelho, azul e amarelo, e ao lado escrito elo" id="band_elo"
-                        class="img_cards">
-                    <img src="assets/img/visa_band.png" 
-                        alt="Palavra Visa escrita em azul, com a ponta em cima a esquerda da letra 'v' em laranja" id="band_visa" class="img_cards">
-                    <img src="assets/img/mastercard-band.png" 
-                        alt="Um círculo vermelho e um laranja, os dois se sobrepondo um pouco e ao lado escrito mastercard" id="band_mastercard"
-                        class="img_cards">
+                    <img src="assets/img/elo_band.png"
+                        alt="Um círculo com bordas divididas em três partes nas cores vermelho, azul e amarelo, e ao lado escrito elo"
+                        id="band_elo" class="img_cards">
+                    <img src="assets/img/visa_band.png"
+                        alt="Palavra Visa escrita em azul, com a ponta em cima a esquerda da letra 'v' em laranja"
+                        id="band_visa" class="img_cards">
+                    <img src="assets/img/mastercard-band.png"
+                        alt="Um círculo vermelho e um laranja, os dois se sobrepondo um pouco e ao lado escrito mastercard"
+                        id="band_mastercard" class="img_cards">
                 </div>
             </div>
-            
+
             <!-- Cartão de Débito -->
             <div class="row metodo_pagamento">
                 <div class="row nome_metodo">
                     <div class="col-12">
-                        <h2 class="tit_metodo">Cartão de Débito</h2>
+                        <a class="link" href="./meu_pedido.html">
+                            <h2 class="tit_metodo">Cartão de Débito</h2>
+                        </a>
                     </div>
                 </div>
                 <div class="row bandeiras_cartoes">
-                    <img src="assets/img/elo_band.png" 
-                        alt="Um círculo com bordas divididas em três partes nas cores vermelho, azul e amarelo, e ao lado escrito elo" id="band_elo"
-                        class="img_cards">
-                    <img src="assets/img/visa_band.png" 
-                        alt="Palavra Visa escrita em azul, com a ponta em cima a esquerda da letra 'v' em laranja" id="band_visa" class="img_cards">
-                    <img src="assets/img/mastercard-band.png" 
-                        alt="Um círculo vermelho e um laranja, os dois se sobrepondo um pouco e ao lado escrito mastercard" id="band_mastercard"
-                        class="img_cards">
+                    <img src="assets/img/elo_band.png"
+                        alt="Um círculo com bordas divididas em três partes nas cores vermelho, azul e amarelo, e ao lado escrito elo"
+                        id="band_elo" class="img_cards">
+                    <img src="assets/img/visa_band.png"
+                        alt="Palavra Visa escrita em azul, com a ponta em cima a esquerda da letra 'v' em laranja"
+                        id="band_visa" class="img_cards">
+                    <img src="assets/img/mastercard-band.png"
+                        alt="Um círculo vermelho e um laranja, os dois se sobrepondo um pouco e ao lado escrito mastercard"
+                        id="band_mastercard" class="img_cards">
                 </div>
             </div>
-            
+
             <!-- PIX -->
             <div class="row metodo_pagamento">
                 <div class="row nome_metodo">
                     <div class="col-12">
-                        <h2 class="tit_metodo">Pix</h2>
+                        <a class="link" href="./meu_pedido.html">
+                            <h2 class="tit_metodo">Pix</h2>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -86,7 +97,9 @@
             <div class="row metodo_pagamento">
                 <div class="row nome_metodo">
                     <div class="col-12">
-                        <h2 class="tit_metodo">Boleto</h2>
+                        <a class="link" href="./meu_pedido.html">
+                            <h2 class="tit_metodo">Boleto</h2>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -128,4 +141,5 @@
     <!-- Script principal -->
     <script src="assets/script/script.js"></script>
 </body>
+
 </html>

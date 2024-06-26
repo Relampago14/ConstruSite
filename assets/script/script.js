@@ -1,11 +1,11 @@
-function show_Header(){
+function show_Header() {
     // Declara 'tela' para receber a primeira tag 'header'
     let tela = document.getElementsByTagName('header')[0];
 
     // Se a tela for tiver a largura menor ou igual a 768px, insere 
-    if(window.screen.width <= 768){
-        tela.innerHTML = 
-        `
+    if (window.screen.width <= 768) {
+        tela.innerHTML =
+            `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-10" id="col_tit_header">
@@ -22,9 +22,9 @@ function show_Header(){
         `
     }
 
-    else{
-        tela.innerHTML = 
-        `
+    else {
+        tela.innerHTML =
+            `
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4" id="col_tit_header">
@@ -49,7 +49,7 @@ function show_Header(){
                                 src="assets/img/estrela.png" alt="Estrela"></a>
                         </div>
                         <div class="col-1 col-lg-1">
-                            <a class="cabecalho_links" href="./favoritos.html"><img class="cabecalho_icone"
+                            <a class="cabecalho_links" href="./carrinho.html"><img class="cabecalho_icone"
                                 src="assets/img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho"></a>
                         </div>
                         <div class="col-1 col-lg-1">
@@ -67,12 +67,12 @@ function show_Header(){
 
 
 
-function show_Menu(event){
+function show_Menu(event) {
     event.preventDefault();
     document.getElementById("mySidebar").style.width = "250px";
 }
 
-function hide_Menu(event){
+function hide_Menu(event) {
     event.preventDefault();
     document.getElementById("mySidebar").style.width = "0";
     // document.getElementById("main").style.marginLeft = "0";

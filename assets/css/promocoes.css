@@ -1,24 +1,24 @@
-.promocoes{
+.promocoes {
     display: flex;
     height: 80%;
     padding: 30px;
     align-items: center;
 }
 
-.promocao{
+.promocao {
     flex-direction: center;
     padding-top: 15px;
     padding: 40px;
     font-size: 34px;
 }
 
-.promocao_imagem{
+.promocao_imagem {
     max-width: 100%;
     max-height: 100%;
 }
 
-.separacao_favorito{
+.separacao_favorito {
     background-color: var(--cor-secundaria);
     height: 100%;
-    width:  20px;
+    width: 20px;
 }

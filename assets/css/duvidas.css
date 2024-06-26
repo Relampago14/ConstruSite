@@ -1,0 +1,29 @@
+.duvidas_caixas {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.caixa {
+    background-color: #FF7A00;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 250px 0px 0px 0px;
+}
+
+.caixa_icone {
+
+    max-height: 70px;
+    max-width: 70px;
+
+}
+
+.caix_texto {}
+
+.caixa_dados {
+    font-size: 100px;
+    padding: 5%;
+}

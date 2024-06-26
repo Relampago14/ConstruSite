@@ -1,25 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
 }
 
-main{
+main {
     background-color: #D9D9D9;
     width: auto;
-    height: 70%;
+    min-height: 90%;
     margin: 40px 45px 40px 45px;
-    /* grid: 1; */ 
+    /* grid: 1; */
     /* right: 10px;
     top: 10px;
     bottom: 10px;
     width: 70%; */
 }
 
-.tit_main{
+.tit_main {
     font-size: 42px;
     font-weight: bold;
     padding-top: 10px;
@@ -27,94 +27,95 @@ main{
     padding-left: 30px;
 }
 
-.metodo_pagamento{
+.metodo_pagamento {
     padding-left: 100px;
 }
 
-#band_elo{
+#band_elo {
     width: 95px;
     height: 35px;
 }
 
-#band_visa{
+#band_visa {
     width: 110px;
     height: 35px;
 }
 
-#band_mastercard{
+#band_mastercard {
     width: 183px;
     height: 35px;
 }
 
-footer{
-    margin-top: auto;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 80px;
+.link  {
+    text-decoration: none;
+    color: var(--cor-secundaria);
 }
 
-@media only screen and (max-width: 768px){
+.link:hover  {
+    color: var(--hover-botao);
+}
 
-    .tit_main{
+@media only screen and (max-width: 768px) {
+
+    .tit_main {
         padding-bottom: 30px;
         font-size: 32px;
     }
 
-    .metodo_pagamento{
+    .metodo_pagamento {
         padding-left: 50px;
     }
 
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
 
-    .tit_main{
+    .tit_main {
         padding: 0;
         text-align: center;
         padding-bottom: 40px;
     }
 
-    .tit_metodo{
+    .tit_metodo {
         font-size: 22px;
     }
 
-    .metodo_pagamento{
+    .metodo_pagamento {
         padding-left: 10px;
     }
 
-    #band_elo{
+    #band_elo {
         width: 60px;
         height: 24px;
     }
     
-    #band_visa{
+    #band_visa {
         width: 60px;
         height: 24px;
     }
     
-    #band_mastercard{
+    #band_mastercard {
         width: 120px;
         height: 24px;
     }
 
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px) {
 
-    main{
+    main {
         margin: 20px 25px 20px 25px;
     }
 
-    .tit_main{
+    .tit_main {
         font-size: 24px;
     }
 
-    .metodo_pagamento{
+    .metodo_pagamento {
         padding: 0;
     }
 
-    .bandeiras_cartoes{
+    .bandeiras_cartoes {
         padding: 5px;
     }
 

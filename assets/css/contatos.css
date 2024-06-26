@@ -1,21 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
-    height: 80px;
-}
-
-main{
+main {
     margin: 40px 45px 40px 45px;
     height: auto;
     width: auto;
     border-radius: 30px;
-    background-color: #D9D9D9;;
+    background-color: #D9D9D9;
+    ;
 }
 
-.tit_main{
+.tit_main {
     font-size: 42px;
     font-weight: bold;
     text-align: center;
@@ -23,98 +20,94 @@ main{
     padding-bottom: 50px;
 }
 
-.perfil_integrante{
+.perfil_integrante {
     padding-bottom: 50px;
 }
 
-.foto_integrante{
+.foto_integrante {
     width: 200px;
     height: 200px;
-    margin: auto;    
-    display: block;
-}
-
-.img_logo{
     margin: auto;
     display: block;
 }
 
-.nome_integrante{
+.img_logo {
+    margin: auto;
+    display: block;
+}
+
+.nome_integrante {
     padding-top: 10px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
 
-.contatos_integrantes{
+.contatos_integrantes {
     padding-top: 30px;
 }
 
-#logo_linkedin{
+#logo_linkedin {
     height: 40px;
     width: 40px;
     margin: auto;
     display: block;
 }
 
-#logo_email{
+#logo_email {
     height: 40px;
     width: 50px;
     margin: auto;
     display: block;
 }
 
-#logo_whatsapp{
+#logo_whatsapp {
     height: 40px;
     width: 40px;
     margin: auto;
     display: block;
 }
 
-footer{
-    height: 80px;
-}
+@media only screen and (max-width: 576px) {
 
-@media only screen and (max-width: 576px){
-
-    main{
+    main {
         margin: 20px 25px 20px 25px;
     }
 
-    .foto_integrante{
+    .foto_integrante {
         width: 150px;
         height: 150px;
     }
 
-    .tit_main{
+    .tit_main {
         font-size: 24px;
         padding-top: 20px;
         padding-bottom: 30px;
     }
 
-    .perfil_integrante{
+    .perfil_integrante {
         padding-bottom: 20px;
     }
 
-    .nome_integrante{
+    .nome_integrante {
         font-size: 20px;
     }
 
-    .contatos_integrantes{
+    .contatos_integrantes {
         padding-top: 20px;
     }
 
-    #logo_linkedin{
+    #logo_linkedin {
         height: 35px;
         width: 35px;
     }
-    
-    #logo_email{
+
+    #logo_email {
         height: 40px;
         width: 35px;
     }
-    
-    #logo_whatsapp{
+
+    #logo_whatsapp {
         height: 35px;
         width: 35px;
     }

@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-primaria: #FF7A00;
     --cor-secundaria: #000000;
     --cor-fundo: #F5F5F5;
@@ -9,68 +9,69 @@
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100%;
     box-sizing: border-box;
     background-color: var(--cor-fundo);
 }
 
-.cabecalho{
+.cabecalho {
     background-color: var(--cor-primaria);
     height: 80px;
     width: 100%;
 }
 
-#col_tit_header{
+#col_tit_header {
     display: flex;
     align-items: center;
 }
 
-.cabecalho_titulo{
+.cabecalho_titulo {
     color: var(--cor-secundaria);
     align-items: center;
     font-size: 56px;
     padding-left: 30px;
 }
 
-.cabecalho_opcoes{
+.cabecalho_opcoes {
     align-items: center;
     height: 80px;
     gap: 1%
 }
 
-.cabecalho_links{
+.cabecalho_links {
     text-decoration: none;
 }
 
-.cabecalho_subtitulo{
+.cabecalho_subtitulo {
     color: var(--cor-secundaria);
     font-size: 36px;
 }
 
-.cabecalho_icone{
+.cabecalho_icone {
     max-width: 60px;
 }
 
-#btn_menu{
+#btn_menu {
     height: 80px;
     background: transparent;
 }
 
-#img_menu{
+#img_menu {
     height: 40px;
     width: 40px;
 }
 
 /* Menu recolhível quando a tela tiver 768px de width*/
-.sidebar{
-    height: 100%; 
-    width: 0; /* Propriedade alterada em ./script/script.js */
+.sidebar {
+    height: 100%;
+    width: 0;
+    /* Propriedade alterada em ./script/script.js */
     position: fixed;
     z-index: 1;
     top: 0;
@@ -81,7 +82,7 @@ body{
     transition: 0.5s;
 }
 
-.sidebar a{
+.sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -90,11 +91,11 @@ body{
     transition: 0.3s;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
     color: white;
 }
 
-.sidebar .closebtn{
+.sidebar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -102,14 +103,14 @@ body{
     margin-left: 50px;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     flex-direction: column;
     padding-left: 3.5%;
     padding-right: 3.5%;
 }
 
-.carrossel{
+.carrossel {
     padding: 4.5px;
     padding-top: 5%;
     display: flex;
@@ -118,30 +119,30 @@ body{
     position: relative;
 }
 
-.carrossel_posicao{
+.carrossel_posicao {
     overflow: hidden;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.carrossel_imagens_tamanho{
+.carrossel_imagens_tamanho {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.slide{
+.slide {
     flex: 0 0 100%;
     display: none;
     justify-content: center;
 }
 
-.slide img{
+.slide img {
     max-width: 100%;
-    max-height: 100%;   
+    max-height: 100%;
 }
 
-button{
+button {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -150,14 +151,14 @@ button{
     font-size: 32px;
 }
 
-.dots{
+.dots {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.dot{
+.dot {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -167,26 +168,26 @@ button{
     cursor: pointer;
 }
 
-.dot.active{
+.dot.active {
     background-color: #333;
 }
 
-.anterior{
+.anterior {
     left: 0;
 }
 
-.proximo{
+.proximo {
     right: 0;
 }
 
-.divisao_sessao{
+.divisao_sessao {
     justify-content: end;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 44px;
 }
 
-.sessao_opcoes{
+.sessao_opcoes {
     display: flex;
     flex-direction: column;
 }
@@ -195,28 +196,27 @@ button{
     display: flex;
     text-align: center;
     gap: 75px;
-
 }
 
-.conteudo_produtos{
+.conteudo_produtos {
     display: flex;
     text-align: center;
     gap: 75px;
 }
 
 .produto,
-.departamento{
+.departamento {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 1170px;
 }
 
-.opcoes_imagem{
+.opcoes_imagem {
     max-width: 100%;
     max-height: 100%;
 }
 
-.departamento_titulo{
+.departamento_titulo {
     padding-bottom: 20px;
     font-size: 24px;
 }
@@ -224,9 +224,13 @@ button{
 .rodape{
     background-color: var(--cor-secundaria);
     height: 90px;
+    width: 100%;
     display: flex;
     align-items: center;
     padding-left: 2%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
 }
 
 .rodape_links{
@@ -235,56 +239,56 @@ button{
     font-size: 24px;
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
 
-    .cabecalho_titulo{
+    .cabecalho_titulo {
         font-size: 50px;
         padding-left: 25px;
     }
 
-    .cabecalho_subtitulo{
+    .cabecalho_subtitulo {
         font-size: 30px;
     }
 
-    .cabecalho_icone{
+    .cabecalho_icone {
         max-width: 45px;
     }
 
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
 
-    .cabecalho_titulo{
+    .cabecalho_titulo {
         font-size: 45px;
         padding-left: 0;
     }
 
-    .cabecalho_subtitulo{
+    .cabecalho_subtitulo {
         font-size: 25px;
         text-align: right;
     }
 
-    .cabecalho_opcoes{
+    .cabecalho_opcoes {
         gap: 0;
     }
 
-    .cabecalho_icone{
+    .cabecalho_icone {
         max-width: 30px;
     }
 
     .rodape{
         height: auto;
     }
-
+    
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
-    .cabecalho_titulo{
+    .cabecalho_titulo {
         font-size: 40px;
     }
 
-    .cabecalho_icone{
+    .cabecalho_icone {
         width: 25px;
         height: 25px;
         margin-left: 10px;
@@ -292,9 +296,9 @@ button{
 
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
 
-    #img_menu{
+    #img_menu {
         height: 35px;
         width: 35px;
     }

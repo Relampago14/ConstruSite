@@ -1,53 +1,62 @@
-
-
-.conteudo{
+.conteudo {
     display: flex;
     padding: 60px 80px 60px 89px;
-}
-
-.favoritos{
-    display: flex;
     align-items: center;
-    flex-direction: column;
-    height: 1000px;
-    width: 1740px;
-    background-color: var(--cor--cinza);
 }
 
-.favoritos_titulo{
-    padding-top: 60px;
-    font-size: 54px;
+.cadastro {
+    height: 700px;
+    width: 1440px;
 }
 
-.favorito{
-    padding-top: 80px;
-    padding-left: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
+.formulario_cadastro {
+    width: 40%;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.cadastro_titulo {
+    font-size: 60px;
+    padding: 30px;
+}
+
+input[type="text"],
+input[type="password"] {
     width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
-.favorito_dados{
-    flex-direction: center;
-    padding-top: 15px;
-    padding-left: 40px;
-    font-size: 34px;
+input[type="submit"] {
+    margin-top: 40px;
+    width: 100%;
+    height: 87px;
+    background-color: var(--cor-botao);
+    color: var(--cor-secundaria);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 48px;
 }
 
-.favorito_produto{
-    height: 320px;
-    width: 320px;
+input[type="submit"]:hover {
+    background-color: var(--hover-botao);
 }
 
-.favorito_visualizar{
-    padding-top: 15px;
-    height: 60px;
-    width: 60px;
+.cadastro_login {
+    color: var(--cor-botao);
+    font-size: 16px;
 }
 
-.separacao_favorito{
-    background-color: var(--cor-secundaria);
-    width: 1660px;
-    height: 10px;
+.cadastro__login:hover {
+    color: var(--hover-botao);
+    font-size: 16px;
+}
+
+.email,
+.senha {
+    font-size: 48px;
 }

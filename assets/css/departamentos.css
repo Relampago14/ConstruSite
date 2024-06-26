@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
@@ -7,18 +7,18 @@
     margin-top: 50px;
 }
 
-.conteudo_filtro{
+.conteudo_filtro {
     display: flex;
     flex-direction: row;
     padding: 30px;
 }
 
-.container h1{
+.container h1 {
     text-align: center;
     color: #333;
 }
 
-#searchInput{
+#searchInput {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -26,36 +26,37 @@
     border-radius: 4px;
 }
 
-#itemList{
+#itemList {
     list-style-type: none;
     padding: 0;
 }
 
-#itemList li{
+#itemList li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-#itemList li:last-child{
+#itemList li:last-child {
     border-bottom: none;
 }
 
-.sessao_opcoes{
+.sessao_opcoes {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.conteudo_produtos{
+.conteudo_produtos {
     display: flex;
     text-align: center;
     gap: 1px;
 }
 
-.produto{
+.produto {
     width: 320px;
 }
-.opcoes_imagem{
+
+.opcoes_imagem {
     max-width: 75%;
     max-height: 75%;
 }
